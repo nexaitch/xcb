@@ -9,6 +9,6 @@
   <title>◊here-title </title>
   <link rel="stylesheet" href="honne.css"/>
 </head>
-<body><article><section>◊(->html doc)</section>
+<body><article>◊(->html doc)
 </article></body>
 </html>

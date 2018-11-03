@@ -12,6 +12,8 @@ Decks submitted can't win or force an opponeent to discard before their second t
 Some weeks there's also a land rule where you can play basics from outside the game
 }
 
+∎
+
 ◊subtitle{this week}
 Standard cardpool
 3 card blind
@@ -20,6 +22,7 @@ Standard cardpool
 ◊subtitle{previous weeks}
 none so far
 
+∎
 
 ◊subtitle{links}
 ◊subsubtitle{specific document links}
@@ -29,6 +32,8 @@ none so far
 ◊subsubtitle{other useful links}
 ◊link["http://www.mtgsalvation.com/forums/forum-games/forum-magic/579913-discussion-of-phm-banned-lists-rules-strategies"]{mtgs has some useful links}
 ◊link["http://www.mtgsalvation.com/forums/forum-games/forum-magic/541743-perfect-hand-magic-repository"]{mtgs again has links and a list of important cards if you scroll down enough}
+
+∎
 
 ◊subtitle{banlist (shamelessly stolen from mtgs)}
 ◊subsubtitle{all rounds}

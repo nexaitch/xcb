@@ -69,11 +69,23 @@
   )
 )
 
+(define (insert-section-tags #:list-separator [list-separator "∎"] . elems)
+  (define (split-by x lst)
+    (foldr (lambda (element next)
+             (if (eqv? element x)
+                 (cons empty next)
+                 (cons (cons element (first next)) (rest next))))
+           (list empty) lst))
+  (define sections (split-by list-separator elems))
+  (map
+      (λ (xs) (txexpr 'section empty xs))
+      sections))
+
 ;root -- allow newlines instead of p tags
 (provide root)
 (define (root . elements)
-   (txexpr 'decoded-root empty (decode-elements elements
+   (decode-elements (apply insert-section-tags elements)
      #:txexpr-elements-proc decode-paragraphs
      #:exclude-tags '(pre)
      #:string-proc (compose1 smart-quotes smart-dashes))
-   ))
+   )
